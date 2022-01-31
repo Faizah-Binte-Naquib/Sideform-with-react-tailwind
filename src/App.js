@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import Card from './components/Card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='flex-row ml-20'>
+      <div className='flex-row'>
+      <div className='text-5xl mt-20 ml-5 font-bold'>Do you want to add another place of attraction?</div>
+      <Card/>
+      </div>
+    <div className='flex flex-col items-center justify-center min-h-screen py-2'>
+    <Sidebar/>
     </div>
+    </div>
+    </>
   );
 }
 
